@@ -1,0 +1,20 @@
+/* #scoreBoardCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#scoreBoard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 40%;
+  border: 1px dashed red;
+  margin-top: -40px;
+}
+
+#scoreBoard > span
+{
+    padding: 2rem;
+    font-size: calc(10px + 2vmin);
+}
