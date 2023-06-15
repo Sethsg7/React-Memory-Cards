@@ -29,5 +29,5 @@
     border: solid 3px black;
     margin-top: -100px;
     margin-bottom: px;
-
+    font-size: calc(25px + 2vmin);
   }
