@@ -1,39 +1,28 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+import * as React from "react";
 import "./Card.css";
 
-class Card extends Component {
-  constructor(props) {
-    super(props);
-    //console.log(props);
-    this.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-
-    this.state = {
-      viewed: false
-    }
-  }
-
-  SetViewed() {
-    this.setState({ viewed: true });
-  }
+class Card extends React.Component {
 
   render() {
     return (
-      <main
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          textAlign: "center",
-        }}
-      >
+      <main id="main">
         <div id="boxCont1">
           <div id="boxCont2">
-            <div style={{
-              backgroundColor: this.color
-            }}
-              className="box">
-              <span>{this.props.pronounciation} - {this.props.character}</span></div>
+            <div className="box">
+              <div
+                className="cardItem"
+                style={{ backgroundColor: "#" + this.props.value.color }}
+                >
+                {/* {console.log("hello", this.props.value.color)} */}
+                <p id="cont">{this.props.value.content}</p>
+                <p id="char">{this.props.value.hanzi}</p>
+              </div>
+            </div>
           </div>
+        </div>
+        <div id="answer">
+          <p className="appear">Has this character appeared yet?</p>
         </div>
       </main>
     );
@@ -41,3 +30,31 @@ class Card extends Component {
 }
 
 export default Card;
+
+// render() {
+//   return (
+//     <main>
+//       <div id="boxCont1">
+//         <div id="boxCont2">
+//           <div className="box">
+//             <div
+//               className="cardItem"
+//               style={{ backgroundColor: "#" + this.props.value.color }}
+//             >
+//               <p id="cont">{this.props.value.content}</p>
+//            <div id="charCarry2">
+//             <div id="charCarry">
+//               <p id="char">{this.props.value.hanzi}</p>
+//             </div>
+//             </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       <div id="answer">
+//         <p>Has this character appeared yet?</p>
+//       </div>
+//     </main>
+//   );
+// }
+// }

@@ -1,1 +1,97 @@
 /* Add custom styling here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+}
+
+.App {
+  background-color: rgb(20, 18, 122);
+  height: 100%;
+}
+
+h1 {
+  position: relative;
+  font-size: calc(25px + 2vmin);
+}
+
+#congrats {
+  font-size: calc(10px + 2vmin);
+}
+
+.show-congrats {
+  display: none;
+}
+
+#scoreBoardCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-scoreboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 40%;
+}
+
+#S1,
+#S2 {
+  padding: 2rem;
+  font-size: calc(10px + 2vmin);
+}
+
+#btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#b1 {
+  font-size: calc(15px + 2vmin);
+  margin-bottom: -60px;
+  color: rgb(14, 193, 248);
+  background-color: rgb(25, 168, 120);
+  cursor: pointer;
+  transition: opacity 1s;
+  border-radius: 15px 15px;
+  width: 62px;
+  border-color: rgb(59, 222, 146);
+}
+
+#b1:hover {
+  opacity: 0.6;
+}
+
+#b1:active {
+  background-color: blueviolet;
+  opacity: 0.9;
+}
+
+#b2 {
+  font-size: calc(15px + 2vmin);
+  margin-bottom: -60px;
+  color: rgb(14, 193, 248);
+  background-color: rgb(25, 168, 120);
+  cursor: pointer;
+  transition: opacity 1s;
+  border-radius: 15px 15px;
+  width: 52px;
+  border-color: rgb(59, 222, 146);
+}
+
+#b2:hover {
+  opacity: 0.6;
+}
+
+#b2:active {
+  background-color: blueviolet;
+  opacity: 0.9;
+}
